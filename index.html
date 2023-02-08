@@ -19,14 +19,32 @@
           <p>Struktura commit poruke:</p>
           <button class="btn">Prikaži</button>
         </div>
-        <ul class="list-items">
-          <li class="list-item">
-             &lt;type&gt;[optional scope]: &lt;description&gt; 
-          </li>
+        <ul class="list-items" style="display: none">
+          <li class="list-item">tip(scope): subject</li>
           <li class="list-item">[optional body]</li>
           <li class="list-item">[optional footer(s)]</li>
         </ul>
         <p class="changing-content"></p>
+        <p>
+          Conventional Commits mogu pomoci u Semantic Versioning jer ako je npr
+          sadasnja verzija 1.13.2. - 1 je MAJOR verzija i ona ce se
+          inkrementovati na 2 ako se desi velika promena, inkompatibilna sa
+          starom verzijom, a to je BREAKING CHANGE ili ! u Conv. Comm. -
+          Inkrement MINOR verzije, u ovom slucaju 13 ce se povecati na 14
+          ukoliko imamo novu funkcionalnost koja nece brake-ovati kod, a to je
+          feat. - Poslednji broj je PATCH i on se inkrementuje kada ne dodajemo
+          novu funkcionalnost vec samo popravljamo bug ili security issue, a to
+          je fix u Conv. Comm.
+        </p>
+        <p>
+          Pored ovih tipova C.C. mogu se koristiti i build:, chore:, ci: docs:,
+          style: refactor:, perf:, test: itd. ali oni ne uticu na SemVer
+          implicitno (ali mogu eksplicitno)
+        </p>
+        <p>
+          BREAKING CHANGE je promena koda koja ima velik uticaj na
+          funkcionalnost i zbog koje ce delovi mozda prestati da rade
+        </p>
       </div>
     </main>
     <script src="main.js"></script>

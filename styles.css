@@ -32,20 +32,26 @@ h3 {
 
 p {
   font-size: 1.2rem;
+  margin: 2rem;
 }
+
 .btn {
   padding: 1.3rem;
   margin: 1rem;
   color: purple;
   background-color: wheat;
-  border: .2rem solid salmon;
-  border-radius: 50%;
+  border: 0.2rem solid purple;
+  border-radius: 20%;
+}
+
+.changing-content {
+  border: 1rem solid purple;
+  padding: 1rem;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -55,7 +61,6 @@ ul li {
   padding: 1.5rem;
   cursor: pointer;
   max-width: 40rem;
-  display: flex;
 }
 
 ul li:hover {
